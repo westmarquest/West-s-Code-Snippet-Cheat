@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+  
+
+  }
+
+  :root {
+    --purp: #4747d1;
+    --dark: #00001a;
+  
+  }
+
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-color: var(--dark);
+    /* color: rgb(54, 33, 33); */
+    color: white;
+
+  }
+
+  header {
+    margin: 30px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .grid {
+    display: grid;
+    width: 100;
+    /* grid-template-column:;
+    repeat(12, 1fr); */
+} 
+/*   
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: #13293d;
+    color: #fff;
+  } */
+  
+  .card {
+    flex-wrap: 50%;
+    border-style: dashed;
+    border-width: 1px;
+    margin: 15px;
+    background-color: var(--dark);
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+   
+
+  }
+
+ .card:hover, .card-header:hover, a:hover {
+    /* background-color: yellow; */
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 14px var(--purp);
+  }
+
+
+  .card-header {
+    padding: 10px;
+    background: linear-gradient(#4747d1 10%, #00001a 25%, #00001a 50%, #00001a 75%, #4747d1 100%);
+    color: var(--purp);
+    width: 382px;
+    position: relative;
+    margin-top: -20px;
+  } 
+  
+  .card-desc  {
+    margin: 10px;
+    font-size: 14px;
+
+  }
+
+
+  .card-code {
+    padding: 20px;
+    background: var(--purp);
+    font-size: 16px;
+    margin: 15px;
+    border-radius: 5px;
+  }
+  
+  
+  .card-img {
+
+    /* The client insists that images be at least 400px */
+    min-width: 400px;
+  }
+
+
+  
+
+  h1 {
+    text-align: center;
+    color: var(--purp);
+    font-size: 40px;
+  
+
+  }
+
+
+  h2 {
+    font-size: 24px;
+    border-radius: 5px;
+    border-style: solid;
+    width: 95%;
+    margin: 2%;
+  }
+
+
+  h3 {
+    text-align: center;
+    color: var(--purp);
+
+  }
+
+
+
+
+  .linear-gradient-background {
+    background-image: linear
+    -gradient(
+      rgba(232, 102,  236,  0.3) 0%
+      rgba(232, 102,  236,  0.6)
+      100%
+    );
+} 
+
+  @media screen and (max-width: 768px) {
+    .card {
+      flex-wrap: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .card {
+      flex-wrap: 50%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .card {
+      flex-wrap: 25%;
+    }
+  }
+
+/* 
+  @media screen and (max-width:768px) {
+    body { 
+      flex-wrap: 100%;
+      
+    } 
+  }
+    
+
+
+  @media screen and (min-width:992px) {
+    body {
+      flex-wrap: 33%;
+    }
+  }
+    @media screen and (min-width:768px) {
+      body {
+        flex-wrap: 50%;
+      }
+    } */
+/*     
+    @media screen and (min-width:992px) {
+      body {
+        flex-wrap: 33%;
+      }
+    } */
